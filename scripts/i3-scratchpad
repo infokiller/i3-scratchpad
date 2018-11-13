@@ -58,6 +58,10 @@ def _create_args_parser() -> argparse.Namespace:
         dest='process_workspace_containers',
         action='store_false')
     toggle_parser.set_defaults(process_workspace_containers=True)
+    toggle_parser.add_argument(
+        '--dock',
+        default=True,
+        action='store_false')
     return parser
 
 
@@ -77,8 +81,8 @@ def main():
         i3_scratchpad.mark_as_scratchpad(focused)
         i3_scratchpad.move_to_scratchpad(focused)
     elif args.command == 'toggle-last':
-        i3_scratchpad.toggle_last_container(tree,
-                                            args.process_workspace_containers)
+        i3_scratchpad.toggle_last_container(
+            tree, args.process_workspace_containers, args.dock)
 
 
 if __name__ == '__main__':
