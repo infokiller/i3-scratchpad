@@ -1,0 +1,9 @@
+name: i3_scratchpad
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - pip
+  - pip:
+    - i3ipc
