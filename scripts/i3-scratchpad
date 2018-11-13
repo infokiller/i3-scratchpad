@@ -57,7 +57,7 @@ def _create_args_parser() -> argparse.Namespace:
         '--no-process-workspace-containers',
         dest='process_workspace_containers',
         action='store_false')
-    parser.set_defaults(process_workspace_containers=True)
+    toggle_parser.set_defaults(process_workspace_containers=True)
     return parser
 
 
