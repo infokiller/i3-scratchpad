@@ -3,16 +3,9 @@
 
 import argparse
 import logging
-import os.path
-import sys
 
 import i3ipc
 
-# TODO(infokiller): Figure out how to correctly import so that it works in pip
-# installations and in local dev.
-sys.path = [os.path.join(os.path.dirname(__file__), '..')] + sys.path
-# pylint: disable=import-error
-# pylint: disable=wrong-import-position
 from i3_scratchpad import i3_scratchpad
 
 
