@@ -53,8 +53,13 @@ def _create_args_parser() -> argparse.Namespace:
     toggle_parser.set_defaults(process_workspace_containers=True)
     toggle_parser.add_argument(
         '--dock',
-        default=True,
+        dest='dock',
+        action='store_true')
+    toggle_parser.add_argument(
+        '--no-dock',
+        dest='dock',
         action='store_false')
+    toggle_parser.set_defaults(dock=False)
     return parser
 
 
