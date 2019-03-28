@@ -78,19 +78,19 @@ def move_to_scratchpad(container):
 
 def toggle_last_container(tree, process_workspace_containers, dock):
     focused = tree.find_focused()
-    if is_scratchpad_container(focused):
+    if is_scratchpad_container(focused) and is_floating(focused):
         move_to_scratchpad(focused)
         return
     focused_workspace = focused.workspace()
     if process_workspace_containers:
-        sp_containers = get_scratchpad_containers(focused_workspace)
-        if sp_containers:
-            move_to_scratchpad(sp_containers[0])
-            return
-        # for container in get_scratchpad_containers(focused_workspace):
-        #     if is_floating(container):
-        #         move_to_scratchpad(container)
-        #         return
+        # sp_containers = get_scratchpad_containers(focused_workspace)
+        # if sp_containers:
+        #     move_to_scratchpad(sp_containers[0])
+        #     return
+        for container in get_scratchpad_containers(focused_workspace):
+            if is_floating(container):
+                move_to_scratchpad(container)
+                return
     containers = tree.scratchpad().leaves()
     if not containers:
         return
