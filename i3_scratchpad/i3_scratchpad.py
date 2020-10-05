@@ -3,6 +3,8 @@ from typing import List
 
 import i3ipc
 
+# NOTE: this prefix is used by i3-track-last so it must not be changed without
+# updating that script.
 _SCRATCHPAD_MARK_PREFIX = '_sp'
 
 _LIST_CONTAINERS_HEADER = [
