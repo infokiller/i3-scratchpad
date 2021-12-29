@@ -108,3 +108,7 @@ pytype_output/
 
 # pyre
 .pyre/
+
+# Snyk Code/DeepCode
+# https://stackoverflow.com/a/66912109/1014208
+.dccache
