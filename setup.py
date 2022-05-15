@@ -4,15 +4,15 @@ import setuptools
 
 README_PATH = os.path.join(
     os.path.abspath(os.path.dirname(__file__)), 'README.md')
-with open(README_PATH) as f:
+with open(README_PATH, encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
 
 setuptools.setup(
     name='i3-scratchpad',
-    version='0.0.1-alpha',
-    description='Manage i3wm workspaces in groups you control',
+    version='0.0.2a1',
+    description='i3wm scratchpad utilities',
     long_description=LONG_DESCRIPTION,
-    long_description_content_type="text/markdown",
+    long_description_content_type='text/markdown',
     url='https://github.com/infokiller/i3-scratchpad',
     author='infokiller',
     author_email='joweill@icloud.com',
@@ -23,8 +23,9 @@ setuptools.setup(
         'Operating System :: POSIX :: Linux',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
     keywords='i3 i3wm extensions add-ons',
     packages=setuptools.find_packages(),
