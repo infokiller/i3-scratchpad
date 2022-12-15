@@ -24,9 +24,9 @@ pep517==0.13.0 \
     --hash=sha256:4ba4446d80aed5b5eac6509ade100bff3e7943a8489de249654a5ae9b33ee35b \
     --hash=sha256:ae69927c5c172be1add9203726d4b84cf3ebad1edcd5f71fcdc746e66e829f59
     # via build
-pip-tools==6.11.0 \
-    --hash=sha256:64a6b66887c270705a9006a10023eb4c893e9bf66c306bdcb4440541b367c057 \
-    --hash=sha256:90c5dc150e3856e4463b81ccc99307ccf9554e5db8393eb273705cb0b8f71c60
+pip-tools==6.12.0 \
+    --hash=sha256:8e22fbc84ede7ca522ba4b033c4fcf6a6419adabc75d24747be3d8262504489a \
+    --hash=sha256:f441603c63b16f4af0dd5026f7522a49eddec2bc8a4a4979af44e1f6b0a1c13e
     # via -r requirements.in
 python-xlib==0.32 \
     --hash=sha256:20e1382f8a98d8ed0facfa45415c46fd0c8eeb6f9996e58c22d3382a4ed6e37b \
@@ -36,12 +36,6 @@ six==1.16.0 \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254
     # via python-xlib
-tomli==2.0.1 \
-    --hash=sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc \
-    --hash=sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f
-    # via
-    #   build
-    #   pep517
 wheel==0.38.4 \
     --hash=sha256:965f5259b566725405b05e7cf774052044b1ed30119b5d586b2703aafe8719ac \
     --hash=sha256:b60533f3f5d530e971d6737ca6d58681ee434818fab630c83a734bb10c083ce8
