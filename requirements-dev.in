@@ -2,6 +2,6 @@
 pip-tools~=6.8
 pylint~=2.15
 yapf~=0.32
-isort~=5.10
+isort~=5.12
 ipython~=8.5
 jupytext~=1.0
