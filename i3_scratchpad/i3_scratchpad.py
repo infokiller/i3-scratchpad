@@ -61,6 +61,7 @@ def print_scratchpad_containers(tree: i3ipc.Con) -> None:
     scratchpad_workspace_id = tree.scratchpad().id
     table = [_LIST_CONTAINERS_HEADER]
     for con in get_scratchpad_containers(tree):
+        # pylint: disable-next=superfluous-parens
         in_scratchpad = (con.workspace().id == scratchpad_workspace_id)
         table.append(
             [con.id, in_scratchpad, con.window_class, con.window_instance])
