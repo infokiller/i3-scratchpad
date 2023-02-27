@@ -4,4 +4,4 @@ pylint~=2.16
 yapf~=0.32
 isort~=5.10
 ipython~=8.5
-jupytext~=1.0
+jupytext~=1.14
