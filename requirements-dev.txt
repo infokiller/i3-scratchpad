@@ -40,9 +40,9 @@ executing==1.2.0 \
     --hash=sha256:0314a69e37426e3608aada02473b4161d4caf5a4b244d1d0c48072b8fee7bacc \
     --hash=sha256:19da64c18d2d851112f09c287f8d3dbbdf725ab0e569077efb6cdcbd3497c107
     # via stack-data
-fastjsonschema==2.16.3 \
-    --hash=sha256:04fbecc94300436f628517b05741b7ea009506ce8f946d40996567c669318490 \
-    --hash=sha256:4a30d6315a68c253cfa8f963b9697246315aa3db89f98b97235e345dedfb0b8e
+fastjsonschema==2.17.1 \
+    --hash=sha256:4b90b252628ca695280924d863fe37234eebadc29c5360d322571233dc9746e0 \
+    --hash=sha256:f4eeb8a77cef54861dbf7424ac8ce71306f12cbb086c45131bcba2c6a4f726e3
     # via nbformat
 ipython==8.13.2 \
     --hash=sha256:7dff3fad32b97f6488e02f87b970f309d082f758d7b7fc252e3b19ee0e432dbb \
