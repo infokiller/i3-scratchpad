@@ -66,9 +66,9 @@ jupyter-core==5.3.0 \
     --hash=sha256:6db75be0c83edbf1b7c9f91ec266a9a24ef945da630f3120e1a0046dc13713fc \
     --hash=sha256:d4201af84559bc8c70cead287e1ab94aeef3c512848dde077b7684b54d67730d
     # via nbformat
-jupytext==1.14.5 \
-    --hash=sha256:976e66be8056459a2067e0ec3ff68cc31e00c31895faf9eb893022d319e8f5b4 \
-    --hash=sha256:a5dbe60d0ea158bbf82c2bce74aba8d0c220ad7edcda09e017c5eba229b34dc8
+jupytext==1.14.6 \
+    --hash=sha256:6a0f9b1d850b4173115065853b8a81956bbbe6ee7d4a7906e9817cd6f6892414 \
+    --hash=sha256:f34b045d89edcecb47772761feaf001daf270fff9470c9b2125345eae9064eb6
     # via -r requirements-dev.in
 lazy-object-proxy==1.9.0 \
     --hash=sha256:09763491ce220c0299688940f8dc2c5d05fd1f45af1e42e636b2e8b2303e4382 \
