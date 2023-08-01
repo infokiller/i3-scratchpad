@@ -76,9 +76,9 @@ jupyter-core==5.3.1 \
     --hash=sha256:5ba5c7938a7f97a6b0481463f7ff0dbac7c15ba48cf46fa4035ca6e838aa1aba \
     --hash=sha256:ae9036db959a71ec1cac33081eeb040a79e681f08ab68b0883e9a676c7a90dce
     # via nbformat
-jupytext==1.14.7 \
-    --hash=sha256:53cbfe90857369cf30ac055acf7820d6d9d1c53683eecd58edef5072de34b455 \
-    --hash=sha256:ab2fd066dce8112ac95a7c4f9218c1a40d6cefa76b09352c8d08acf21dad5349
+jupytext==1.15.0 \
+    --hash=sha256:290c0a04b0a0a341d7ca87a2992cf407eb83898873baddf0bc48039a5e301ff8 \
+    --hash=sha256:7bb7cf4c0a91f5b1591f7558fa3a6494ac6ccf9810d1aa58565d4d9a2675a4a1
     # via -r requirements-dev.in
 lazy-object-proxy==1.9.0 \
     --hash=sha256:09763491ce220c0299688940f8dc2c5d05fd1f45af1e42e636b2e8b2303e4382 \
@@ -140,9 +140,9 @@ mdurl==0.1.2 \
     --hash=sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8 \
     --hash=sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba
     # via markdown-it-py
-nbformat==5.9.1 \
-    --hash=sha256:3a7f52d040639cbd8a3890218c8b0ffb93211588c57446c90095e32ba5881b5d \
-    --hash=sha256:b7968ebf4811178a4108ee837eae1442e3f054132100f0359219e9ed1ce3ca45
+nbformat==5.9.2 \
+    --hash=sha256:1c5172d786a41b82bcfd0c23f9e6b6f072e8fb49c39250219e4acfff1efe89e9 \
+    --hash=sha256:5f98b5ba1997dff175e77e0c17d5c10a96eaed2cbd1de3533d1fc35d5e111192
     # via jupytext
 packaging==23.1 \
     --hash=sha256:994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61 \
