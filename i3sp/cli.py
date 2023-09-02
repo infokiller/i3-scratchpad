@@ -6,7 +6,7 @@ import logging
 
 import i3ipc
 
-from i3_scratchpad import i3_scratchpad
+from i3sp import sp
 
 
 def _init_logger(logger) -> None:
@@ -64,22 +64,22 @@ def _create_args_parser() -> argparse.Namespace:
 
 
 def main():
-    logger = i3_scratchpad.logger
+    logger = sp.logger
     _init_logger(logger)
     args = _create_args_parser().parse_args()
     logger.setLevel(getattr(logging, args.log_level.upper(), None))
     i3_connection = i3ipc.Connection()
     tree = i3_connection.get_tree()
     if args.command == 'list-containers':
-        i3_scratchpad.print_scratchpad_containers(tree)
+        sp.print_scratchpad_containers(tree)
     if args.command == 'scratch-or-kill':
-        i3_scratchpad.scratch_or_kill(tree.find_focused())
+        sp.scratch_or_kill(tree.find_focused())
     elif args.command == 'move':
         focused = tree.find_focused()
-        i3_scratchpad.mark_as_scratchpad(focused)
-        i3_scratchpad.move_to_scratchpad(focused)
+        sp.mark_as_scratchpad(focused)
+        sp.move_to_scratchpad(focused)
     elif args.command == 'toggle-last':
-        i3_scratchpad.toggle_last_container(
+        sp.toggle_last_container(
             tree, args.process_workspace_containers, args.dock)
 
 

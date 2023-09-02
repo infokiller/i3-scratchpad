@@ -1,0 +1,17 @@
+# pip-compile doesn't support contraints when using pyproject.toml [1], so this file
+# must either be compiled by pointing pip-compile to pyproject.toml, or manually adding
+# constraints in the invocation.
+# [1] https://github.com/jazzband/pip-tools/issues/1092#issuecomment-1256423806
+# -c req/base.txt
+pip-tools~=7.3
+ruff
+pylint~=2.16
+yapf~=0.40
+isort~=5.12
+pyright
+pytest~=7.4
+pytest-cov~=4.0
+validate-pyproject
+setuptools-scm
+
+# vim: set ft=requirements :

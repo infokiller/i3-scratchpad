@@ -1,0 +1,138 @@
+[project]
+name = 'i3-scratchpad'
+description = 'i3wm scratchpad utilities'
+authors = [
+  {name = 'infokiller', email = 'gitinfokiller@gmail.com'}
+]
+license = {file = 'LICENSE'}
+readme = 'README.md'
+dynamic = ['version', 'dependencies', 'optional-dependencies']
+requires-python = '>=3.10'
+classifiers = [
+  'Development Status :: 3 - Alpha',
+  'Intended Audience :: Developers',
+  'Operating System :: POSIX :: Linux',
+  'License :: OSI Approved :: MIT License',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+]
+keywords = ['i3', 'i3wm', 'extensions', 'add-ons']
+
+[project.urls]
+homepage = 'https://github.com/infokiller/i3-scratchpad'
+repository = 'https://github.com/infokiller/i3-scratchpad'
+
+[project.scripts]
+i3-scratchpad = 'i3sp.cli:main'
+
+[build-system]
+requires = ['setuptools>=68.0', 'setuptools-scm>=7.0']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+packages = ['i3sp']
+
+[tool.setuptools_scm]
+write_to = 'i3sp/__version__.py'
+
+[tool.setuptools.dynamic]
+dependencies = { file = ['req/base.in'] }
+optional-dependencies.dev = { file = ['req/dev.in'] }
+
+[tool.pip-tools]
+generate-hashes = true
+allow-unsafe = true
+strip-extras = true
+
+# https://docs.pytest.org/en/stable/reference/customize.html#pyproject-toml
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/7.1.x/how-to/capture-warnings.html#controlling-warnings
+# https://github.com/pydantic/pydantic/issues/6467
+filterwarnings = [
+    'ignore:.*serializer warnings:UserWarning:pydantic',
+    'ignore:.*cgi.*:DeprecationWarning:zeep',
+]
+
+[tool.yapf]
+based_on_style = 'google'
+column_limit = 100
+
+[tool.yapfignore]
+ignore_patterns = [
+  'bazel-*/**',
+]
+
+[tool.isort]
+profile = 'google'
+extend_skip = [
+  'bazel-*/**',
+]
+extend_skip_glob = [
+  'bazel-*'
+]
+
+[tool.pyright]
+include = ['i3sp']
+# ignore = []
+# extraPaths = []
+
+# https://beta.ruff.rs/docs/settings
+[tool.ruff]
+# Enable pycodestyle warnings (`W`)
+extend-select = ['W']
+# extend-exclude = [
+#   'data',
+#   'logs',
+#   'cache',
+#   'repos',
+# ]
+# Force ruff to exclude files even if they are explicitly passed in a CLI invocation.
+# This is required for Vim ALE to not show errors for these files, since it passes them
+# via stdin, which is considered as an explicit invocation.
+# https://github.com/astral-sh/ruff/discussions/5857#discussioncomment-6583943
+force-exclude = true
+
+# Consistent with yapf
+line-length = 100
+
+[tool.pylint.main]
+max-line-length = 100
+# A comma-separated list of package or module names from where C extensions may
+# be loaded. Extensions are loading into the active Python interpreter and may
+# run arbitrary code.
+# extension-pkg-allow-list = []
+# Minimum line length for functions/classes that require docstrings, shorter ones
+# are exempt.
+docstring-min-length = 10
+# Good variable names which should always be accepted, separated by a comma.
+good-names = ['i', 'j', 'k', 'e', 'f', 'ex', 'fd', 'fp', 'logger', '_']
+# Good variable names regexes, separated by a comma. If names match any regex,
+# they will always be accepted
+good-names-rgxs = ['_?[a-z]']
+# Regular expression matching correct module names. Overrides module-naming-
+# style. If left empty, module names will be checked with the set naming style.
+module-rgx = '[a-z_][a-z0-9_-]{2,30}$'
+# Lone comment lines URLs are OK
+ignore-long-lines = "(https?://\\S{10,}|nosemgrep)"
+# Disable the message, report, category or checker with the given id(s). You can
+# either give multiple identifiers separated by comma (,) or put this option
+# multiple times (only on the command line, not in the configuration file where
+# it should appear only once). You can also use "--disable=all" to disable
+# everything first and then re-enable specific checks. For example, if you want
+# to run only the similarities checker, you can use "--disable=all
+# --enable=similarities". If you want to run only the classes checker, but have
+# no Warning level messages displayed, use "--disable=all --enable=classes
+# --disable=W".
+disable = [
+  'raw-checker-failed', 'bad-inline-option', 'locally-disabled', 'file-ignored',
+  'suppressed-message', 'useless-suppression', 'deprecated-pragma',
+  'use-symbolic-message-instead', 'fixme', 'missing-module-docstring',
+  'missing-class-docstring', 'missing-function-docstring',
+  'logging-format-interpolation', 'logging-fstring-interpolation',
+  'consider-using-f-string', 'too-few-public-methods',
+]
+# ignore-paths = []
+
+[tool.pyflyby]
+align_imports = '0'
+from_spaces = 0
