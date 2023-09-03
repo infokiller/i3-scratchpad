@@ -177,9 +177,9 @@ pyright==1.1.325 \
     --hash=sha256:879a3f66944ffd59d3facd54872fed814830fed64daf3e8eb71b146ddd83bb67 \
     --hash=sha256:8f3ab88ba4843f053ab5b5c886d676161aba6f446776bfb57cc0434ed4d88672
     # via i3-scratchpad (pyproject.toml)
-pytest==7.4.0 \
-    --hash=sha256:78bf16451a2eb8c7a2ea98e32dc119fd2aa758f1d5d66dbf0a59d69a3969df32 \
-    --hash=sha256:b4bf8c45bd59934ed84001ad51e11b4ee40d40a1229d2c79f9c592b0a3f6bd8a
+pytest==7.4.1 \
+    --hash=sha256:2f2301e797521b23e4d2585a0a3d7b5e50fdddaaf7e7d6773ea26ddb17c213ab \
+    --hash=sha256:460c9a59b14e27c602eb5ece2e47bec99dc5fc5f6513cf924a7d03a578991b1f
     # via
     #   i3-scratchpad (pyproject.toml)
     #   pytest-cov
