@@ -173,9 +173,9 @@ pyproject-hooks==1.0.0 \
     --hash=sha256:283c11acd6b928d2f6a7c73fa0d01cb2bdc5f07c57a2eeb6e83d5e56b97976f8 \
     --hash=sha256:f271b298b97f5955d53fb12b72c1fb1948c22c1a6b70b315c54cedaca0264ef5
     # via build
-pyright==1.1.330.post0 \
-    --hash=sha256:2e9e0878298685b66485b340a0aaa16342129eb03ff9ed0e3c1ab66b8bfbe914 \
-    --hash=sha256:8e5b09cc5d1cfa0bcbf8824b0316d21c43fe229da7cef0a09cd12fcf6cb3eedd
+pyright==1.1.331 \
+    --hash=sha256:c3e7b86154cac86c3bd61ea0f963143d001c201e246825aaabdddfcce5d04293 \
+    --hash=sha256:d200a01794e7f2a04d5042a6c3abee36ce92780287d3037edfc3604d45488f0e
     # via i3-scratchpad (pyproject.toml)
 pytest==7.4.2 \
     --hash=sha256:1d881c6124e08ff0a1bb75ba3ec0bfd8b5354a01c194ddd5a0a870a48d99b002 \
@@ -234,9 +234,9 @@ typing-extensions==4.8.0 \
     --hash=sha256:8f92fc8806f9a6b641eaa5318da32b44d401efaac0f6678c9bc448ba3605faa0 \
     --hash=sha256:df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef
     # via setuptools-scm
-validate-pyproject==0.14 \
-    --hash=sha256:3457578f5b8589f11ff0d1fbafba273ed6b8d2ec9d1c62a7716bd7ac3f65a076 \
-    --hash=sha256:39a9451cfdda6f00745fa1bfc0839a0ab078e038bbb3963b038f754e641e3165
+validate-pyproject==0.15 \
+    --hash=sha256:573a5e4858f0bf0cd0f429142cbadbaa83595ce6e3cac322a2a7c3866f4a1458 \
+    --hash=sha256:fc82b61f887739a4092de612466a5ab28ec47c407b19c6caef8d54c88c1d10c0
     # via i3-scratchpad (pyproject.toml)
 wheel==0.41.2 \
     --hash=sha256:0c5ac5ff2afb79ac23ab82bab027a0be7b5dbcf2e54dc50efe4bf507de1f7985 \
