@@ -240,9 +240,9 @@ validate-pyproject==0.15 \
     --hash=sha256:573a5e4858f0bf0cd0f429142cbadbaa83595ce6e3cac322a2a7c3866f4a1458 \
     --hash=sha256:fc82b61f887739a4092de612466a5ab28ec47c407b19c6caef8d54c88c1d10c0
     # via i3-scratchpad (pyproject.toml)
-wheel==0.41.2 \
-    --hash=sha256:0c5ac5ff2afb79ac23ab82bab027a0be7b5dbcf2e54dc50efe4bf507de1f7985 \
-    --hash=sha256:75909db2664838d015e3d9139004ee16711748a52c8f336b52882266540215d8
+wheel==0.41.3 \
+    --hash=sha256:488609bc63a29322326e05560731bf7bfea8e48ad646e1f5e40d366607de0942 \
+    --hash=sha256:4d4987ce51a49370ea65c0bfd2234e8ce80a12780820d9dc462597a6e60d0841
     # via pip-tools
 wrapt==1.15.0 \
     --hash=sha256:02fce1852f755f44f95af51f69d22e45080102e9d00258053b79367d07af39c0 \
