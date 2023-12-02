@@ -86,9 +86,9 @@ i3ipc==2.2.1 \
     # via
     #   -c req/base.txt
     #   i3-scratchpad (pyproject.toml)
-importlib-metadata==6.8.0 \
-    --hash=sha256:3ebb78df84a805d7698245025b975d9d67053cd94c79245ba4b3eb694abe68bb \
-    --hash=sha256:dbace7892d8c0c4ac1ad096662232f831d4e64f4c4545bd53016a3e9d4654743
+importlib-metadata==6.9.0 \
+    --hash=sha256:1c8dc6839ddc9771412596926f24cb5a553bbd40624ee2c7e55e531542bed3b8 \
+    --hash=sha256:e8acb523c335a91822674e149b46c0399ec4d328c4d1f6e49c273da5ff0201b9
     # via yapf
 iniconfig==2.0.0 \
     --hash=sha256:2d91e135bf72d31a410b17c16da610a82cb55f6b0477d1a902134b24a455b8b3 \
@@ -175,9 +175,9 @@ pyproject-hooks==1.0.0 \
     --hash=sha256:283c11acd6b928d2f6a7c73fa0d01cb2bdc5f07c57a2eeb6e83d5e56b97976f8 \
     --hash=sha256:f271b298b97f5955d53fb12b72c1fb1948c22c1a6b70b315c54cedaca0264ef5
     # via build
-pyright==1.1.337 \
-    --hash=sha256:81d81f839d1750385390c4c4a7b84b062ece2f9a078f87055d4d2a5914ef2a08 \
-    --hash=sha256:8cbd4ef71797258f816a8393a758c9c91213479f472082d0e3a735ef7ab5f65a
+pyright==1.1.338 \
+    --hash=sha256:132aa74d2d58d4d27a5b922672b5b4d2be7f3931e7276a2b231d15af6e45daad \
+    --hash=sha256:28231a3c81ec738b3e1b02489eea5b67fb425a9be0717a32b2e075984623b3ff
     # via i3-scratchpad (pyproject.toml)
 pytest==7.4.3 \
     --hash=sha256:0d009c083ea859a71b76adf7c1d502e4bc170b80a8ef002da5806527b9591fac \
@@ -240,9 +240,9 @@ validate-pyproject==0.15 \
     --hash=sha256:573a5e4858f0bf0cd0f429142cbadbaa83595ce6e3cac322a2a7c3866f4a1458 \
     --hash=sha256:fc82b61f887739a4092de612466a5ab28ec47c407b19c6caef8d54c88c1d10c0
     # via i3-scratchpad (pyproject.toml)
-wheel==0.41.3 \
-    --hash=sha256:488609bc63a29322326e05560731bf7bfea8e48ad646e1f5e40d366607de0942 \
-    --hash=sha256:4d4987ce51a49370ea65c0bfd2234e8ce80a12780820d9dc462597a6e60d0841
+wheel==0.42.0 \
+    --hash=sha256:177f9c9b0d45c47873b619f5b650346d632cdc35fb5e4d25058e09c9e581433d \
+    --hash=sha256:c45be39f7882c9d34243236f2d63cbd58039e360f85d0913425fbd7ceea617a8
     # via pip-tools
 wrapt==1.16.0 \
     --hash=sha256:0d2691979e93d06a95a26257adb7bfd0c93818e89b1406f5a28f36e0d8c1e1fc \
